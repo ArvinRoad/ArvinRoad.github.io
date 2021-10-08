@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>微信小程序结构目录</title>
+      <link href="/2021/10/08/wx_AppletsStructureDirectory/"/>
+      <url>/2021/10/08/wx_AppletsStructureDirectory/</url>
+      
+        <content type="html"><![CDATA[<h2 id="微信小程序结构目录"><a href="#微信小程序结构目录" class="headerlink" title="微信小程序结构目录"></a>微信小程序结构目录</h2><blockquote><p><strong>微信小程序框架</strong>的目标是通过尽可能简单、高效的方式让开发者可以在微信中开发具有原生 App 的体验的服务。</p><p>小程序框架提供了自己的视图层描述语言 <strong>WXML</strong> 和 <strong>WXSS</strong> ,以及 <strong>JavaScript</strong> ，并在视图层与逻辑层间提供了数据传输和事件系统，让开发者能够专注于数据与逻辑。</p></blockquote><hr><h3 id="小程序文件结构和传统-Web-对比"><a href="#小程序文件结构和传统-Web-对比" class="headerlink" title="小程序文件结构和传统 Web 对比"></a>小程序文件结构和传统 Web 对比</h3><table><thead><tr><th align="center">结构</th><th align="center">传统 Web</th><th align="center">微信小程序</th></tr></thead><tbody><tr><td align="center">结构</td><td align="center">HTML</td><td align="center">WXML</td></tr><tr><td align="center">样式</td><td align="center">CSS</td><td align="center">WXSS</td></tr><tr><td align="center">逻辑</td><td align="center">JavaScript</td><td align="center">Java script</td></tr><tr><td align="center">配置</td><td align="center">无</td><td align="center">JSON</td></tr></tbody></table><p>通过以上对比得出，<strong>传统 Web</strong> 是三层结构。而微信小程序是四层结构，多了一层 <strong>配置.json</strong></p><hr><h3 id="基本的项目目录"><a href="#基本的项目目录" class="headerlink" title="基本的项目目录"></a>基本的项目目录</h3><p><img src="https://z3.ax1x.com/2021/10/08/5P3C9A.png" alt="微信小程序结构目录"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+          <category> 程序 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教学文档 </tag>
+            
+            <tag> 微信小程序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Kali-Linux 目录扫描 Dirbuster</title>
       <link href="/2021/10/05/kali-LinuxDirectoryscan_Dirbuster/"/>
       <url>/2021/10/05/kali-LinuxDirectoryscan_Dirbuster/</url>
@@ -22,9 +51,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
         </tags>
       
@@ -76,9 +105,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
         </tags>
       
@@ -105,9 +134,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
         </tags>
       
@@ -161,9 +190,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
             <tag> 信息收集 </tag>
             
@@ -194,9 +223,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
             <tag> 信息收集 </tag>
             
@@ -227,9 +256,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
             <tag> 信息收集 </tag>
             
@@ -260,9 +289,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
         </tags>
       
@@ -289,9 +318,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
         </tags>
       
@@ -318,9 +347,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
         </tags>
       
@@ -347,9 +376,9 @@
       
         <tags>
             
-            <tag> Kali Linux </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Kali Linux </tag>
             
         </tags>
       
@@ -401,9 +430,9 @@
       
         <tags>
             
-            <tag> 教学文档 </tag>
-            
             <tag> Java </tag>
+            
+            <tag> 教学文档 </tag>
             
         </tags>
       
@@ -559,9 +588,9 @@
       
         <tags>
             
-            <tag> 教学文档 </tag>
-            
             <tag> Java </tag>
+            
+            <tag> 教学文档 </tag>
             
             <tag> 程序开发 </tag>
             
