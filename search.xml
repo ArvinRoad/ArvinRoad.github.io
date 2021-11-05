@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Java 创建窗口</title>
+      <link href="/2021/11/05/CodeGame_Java_SuperMary_Test01/"/>
+      <url>/2021/11/05/CodeGame_Java_SuperMary_Test01/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Java-窗口绘制"><a href="#Java-窗口绘制" class="headerlink" title="Java 窗口绘制"></a>Java 窗口绘制</h2><blockquote><p>创建窗口我们需要继承 JFrame 类</p><p>向窗口对象添加键盘监听器 需要该类实现 KeyListener 接口 并重写抽象方法</p></blockquote><h3 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.arvin;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.swing.*;</span><br><span class="line"><span class="keyword">import</span> java.awt.event.KeyEvent;</span><br><span class="line"><span class="keyword">import</span> java.awt.event.KeyListener;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  窗口框架类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WindowsFrame</span>  <span class="keyword">extends</span> <span class="title">JFrame</span> <span class="keyword">implements</span> <span class="title">KeyListener</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 空参构造</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">WindowsFrame</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置窗口的大小为 800 * 600</span></span><br><span class="line">        <span class="keyword">this</span>.setSize(<span class="number">800</span>, <span class="number">600</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置窗口居中显示</span></span><br><span class="line">        <span class="keyword">this</span>.setLocationRelativeTo(<span class="keyword">null</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置窗口的可见性</span></span><br><span class="line">        <span class="keyword">this</span>.setVisible(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建点击窗口上的关闭键，结束程序</span></span><br><span class="line">        <span class="keyword">this</span>.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置窗口大小不可变</span></span><br><span class="line">        <span class="keyword">this</span>.setResizable(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 向窗口对象添加键盘监听器 需要该类实现 KeyListener 接口 并重写抽象方法</span></span><br><span class="line">        <span class="keyword">this</span>.addKeyListener(<span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置窗口名称</span></span><br><span class="line">        <span class="keyword">this</span>.setTitle(<span class="string">&quot;超级玛丽&quot;</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  Main 主函数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建 WindowsFrame 的对象</span></span><br><span class="line">        WindowsFrame windowsFrame = <span class="keyword">new</span> WindowsFrame();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  KeyListener并重写抽象方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">keyTyped</span><span class="params">(KeyEvent e)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">keyPressed</span><span class="params">(KeyEvent e)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">keyReleased</span><span class="params">(KeyEvent e)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> CodeGame </category>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Login Page 设计演示01</title>
       <link href="/2021/11/01/design_LoginPage_2021_11_01/"/>
       <url>/2021/11/01/design_LoginPage_2021_11_01/</url>
