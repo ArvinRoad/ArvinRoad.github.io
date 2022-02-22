@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cent OS 8.0服务器部署Spring Boot | Arvin</title><meta name="keywords" content="教学文档,游戏开发"><meta name="author" content="Arvin"><meta name="copyright" content="Arvin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="#include &lt;Windows.h&gt;Int WINAPI  WinMain(_In_ HINSTANCE hInstance,_In_opt HINSTANCE hPrevInstance,_In_ LPSTR lpCmdine,_In_ int nCmdShow)&amp;#123;    MessageBox(NULL,L&quot;你好，Visual Studio&quot;,L&amp;q">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cent OS 8.0服务器部署Spring Boot">
+<meta property="og:url" content="https://arvinroad.github.io/2022/02/22/GameCode_WinMain_2022.2.22.01/index.html">
+<meta property="og:site_name" content="Arvin">
+<meta property="og:description" content="#include &lt;Windows.h&gt;Int WINAPI  WinMain(_In_ HINSTANCE hInstance,_In_opt HINSTANCE hPrevInstance,_In_ LPSTR lpCmdine,_In_ int nCmdShow)&amp;#123;    MessageBox(NULL,L&quot;你好，Visual Studio&quot;,L&amp;q">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://p1.ssl.qhimg.com/t01f1364aab8bc27b46.jpg">
+<meta property="article:published_time" content="2022-02-22T12:44:00.000Z">
+<meta property="article:modified_time" content="2022-02-22T12:45:01.322Z">
+<meta property="article:author" content="Arvin">
+<meta property="article:tag" content="教学文档">
+<meta property="article:tag" content="游戏开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://p1.ssl.qhimg.com/t01f1364aab8bc27b46.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://arvinroad.github.io/2022/02/22/GameCode_WinMain_2022.2.22.01/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查詢的內容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"该文章创建于","messageNext":"天前，请以最新文章为准."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Arvin","link":"連結: ","source":"來源: Arvin","info":"著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切換為繁體","cht_to_chs":"你已切換為簡體","day_to_night":"你已切換為深色模式","night_to_day":"你已切換為淺色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Cent OS 8.0服务器部署Spring Boot',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-22 20:45:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">載入中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='./img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">標籤</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分類</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 归档书屋</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fas fa-book-open"></i><span> 阅读</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 休闲室</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 電影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 團隊成員</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://p1.ssl.qhimg.com/t01f1364aab8bc27b46.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Arvin</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜尋</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 归档书屋</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fas fa-book-open"></i><span> 阅读</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 休闲室</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 電影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 團隊成員</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Cent OS 8.0服务器部署Spring Boot</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2022-02-22T12:44:00.000Z" title="發表於 2022-02-22 20:44:00">2022-02-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2022-02-22T12:45:01.322Z" title="更新於 2022-02-22 20:45:01">2022-02-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A8%8B%E5%BA%8F/">程序</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Cent OS 8.0服务器部署Spring Boot"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Windows.h&gt;</span></span></span><br><span class="line"><span class="function">Int WINAPI  <span class="title">WinMain</span><span class="params">(_In_ HINSTANCE hInstance,_In_opt HINSTANCE hPrevInstance,_In_ LPSTR lpCmdine,_In_ <span class="keyword">int</span> nCmdShow)</span></span>&#123;</span><br><span class="line">    <span class="built_in">MessageBox</span>(<span class="literal">NULL</span>,<span class="string">L&quot;你好，Visual Studio&quot;</span>,<span class="string">L&quot;消息窗口&quot;</span>,<span class="number">0</span>);</span><br><span class="line">    Return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>WINAPI 其实就是 _stdcall 有时候也会写作 CALLBACK 它和 WINAPI 等效<br>WinMain 是Windows程序的入口函数</p>
+<h3 id="WinMain的第一个参数："><a href="#WinMain的第一个参数：" class="headerlink" title="WinMain的第一个参数："></a>WinMain的第一个参数：</h3><p>HINSTANCE类型的hInstance，它表示该程序当前运行的实例句柄。<br>我们可以对这个类型HINSTANCE进行字面上的理解，h前缀表示这个参数的类型为handle(句柄)，句柄的意思，而后面的Instance中文意思是实例，将两个意思结合起来，所以这个类型就是实例句柄。<br>hInstance其实就是一个数值。当一个程序在Windows下运行时，它唯一对应一个运行中的实例，也只有运行中的程序实例，才有资格分配到句柄。<br>一个应用程序可以运行多个实例，每运行一个实例，系统都会给该实例分配一个句柄，并且通过hInstance参数传递给程序的入口点WinMain函数。</p>
+<h3 id="WinMain的第二个参数："><a href="#WinMain的第二个参数：" class="headerlink" title="WinMain的第二个参数："></a>WinMain的第二个参数：</h3><p>HINSTANCE类型的hPrevInstance,表示当前实例的前一个实例句柄。<br>​我们可以对这个参数进行字面上的理解，h表示参数类型为句柄，Prev代表先前的(Previous)意思，Instance依旧表示实例，那么组合起来就是先前的实例句柄，这样顾名思义，是不是很好记忆呢，对于这个参数用法，MSDN中明确表示在Win32环境下，该参数总是取NULL，这就是说在Win32环境下这个参数没有存在感，不起任何作用，只是在进行WinMain函数书写时需要将它专门做为一个参数表示出来而已。</p>
+<h3 id="WinMain的第三个参数："><a href="#WinMain的第三个参数：" class="headerlink" title="WinMain的第三个参数："></a>WinMain的第三个参数：</h3><p>LPSTR类型的lpCmdLine，它是一个以空终止的字符串，指定传递给运用程序的命令行参数。<br>依旧是进行参数肢解：lp前缀表示这个参数是一个指针，Cmd表示Command，命令的意思，与Line组合起来就表示命令行。<br>例如在Windows7操作系统下的E盘有一个叫ForTheDream.txt的文件，我们用鼠标双击这个文件时将启动记事本程序(notepad.exe)。<br>此时系统会将E:\ForTheDream.txt作为命令行的参数传递给记事本程序的WinMain函数，记事本程序会在得到这个文件的路径后，就会在窗口中正确显示这个文件的内容。</p>
+<h3 id="WinMain的第四个参数："><a href="#WinMain的第四个参数：" class="headerlink" title="WinMain的第四个参数："></a>WinMain的第四个参数：</h3><p>int类型的nCmdShow，指定程序窗口应该如何显示，是最大化，最小化，还是隐藏等等。<br>这个参数可有如下取值：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SW_HIDE</td>
+<td>0</td>
+<td>隐藏此窗口并激活另一个窗口</td>
+</tr>
+<tr>
+<td>SW_MAXIMIZE</td>
+<td>3</td>
+<td>最大化指定的窗口</td>
+</tr>
+<tr>
+<td>SW_MINIMIZE</td>
+<td>6</td>
+<td>最小化指定的窗口并激活当前Z次序中顶部的窗口</td>
+</tr>
+<tr>
+<td>SW_RESTOPE</td>
+<td>9</td>
+<td>激活并显示此窗口，如果此窗口被最小化或者最大化了，系统会恢复它到原始尺寸的位置，一个应用程序应该在恢复最小化的窗口时指定此SW_RESTORE标识</td>
+</tr>
+<tr>
+<td>SW_SHOW</td>
+<td>5</td>
+<td>以当前的尺寸和位置激活与显示指定窗口</td>
+</tr>
+<tr>
+<td>SW_SHOWMAXIMIZED</td>
+<td>3</td>
+<td>最大化激活并显示这个窗口</td>
+</tr>
+<tr>
+<td>SW_SHOWMINIMIZED</td>
+<td>2</td>
+<td>最小化激活并显示这个窗口</td>
+</tr>
+<tr>
+<td>SW_SHOWMINNOACTIVE</td>
+<td>7</td>
+<td>最小化显示这个窗口，与SW_SHOWMINIMIZED唯一的区别是不会去激活指定的窗口</td>
+</tr>
+<tr>
+<td>SW_SHOWNA</td>
+<td>8</td>
+<td>以当前的尺寸和位置激活与显示指定窗口，与SW_SHOW的唯一区别是不会去激活指定的窗口</td>
+</tr>
+<tr>
+<td>SW_SHOWNOACTIVATE</td>
+<td>4</td>
+<td>显示一个窗口，若指定的窗口是最小化或者最大化的，系统会恢复其到原始尺寸和位置，与SW_SHOWNORMAL的唯一区别是不会去激活指定的窗口</td>
+</tr>
+<tr>
+<td>SW_SHOWNORMAL</td>
+<td>1</td>
+<td>激活和显示一个窗口，若指定的窗口是最小化或者最大化的，系统会恢复其到原始尺寸和位置。一个应用程序应该在第一次显示窗口的时候指定这个标识</td>
+</tr>
+</tbody></table>
+<h2 id="MessageBox函数"><a href="#MessageBox函数" class="headerlink" title="MessageBox函数"></a>MessageBox函数</h2><p>MessageBox函数，它用于显示一个消息框，可以通过一些参数来设置这个消息框的样式。在MSDN中查到这个函数有如下原型：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">Int WINAPI <span class="title">MessageBox</span><span class="params">(</span></span></span><br><span class="line"><span class="params"><span class="function">_In_opt_ HWND hWnd,</span></span></span><br><span class="line"><span class="params"><span class="function">_In_opt_ LPCTSTR lpTest,</span></span></span><br><span class="line"><span class="params"><span class="function">_In_opt_ LPCTSTR lpCaption,</span></span></span><br><span class="line"><span class="params"><span class="function">_In_ UINT uType</span></span></span><br><span class="line"><span class="params"><span class="function">)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>这里的_In_opt 类似于之前提到过的_in，只不过是后面多了一个_opt,表示可选的（Optional），两个词组合在一起就表示”可选的输入参数”了。就是说这个参数我们可以自己填内容，不填具体内容的话直接填NULL也行得通，选择权在于我们。</p>
+<h3 id="MessageBox函数第一个参数："><a href="#MessageBox函数第一个参数：" class="headerlink" title="MessageBox函数第一个参数："></a>MessageBox函数第一个参数：</h3><p>HWND类型的hWnd，表示我们显示的消息框所属的窗口的句柄。在进行Windows编程中，我们常常要和句柄打交道，后面我们会具体阐述什么是句柄，在我们的Visual Studio程序中，这个参数设为了NULL，表示消息框是从属于桌面。</p>
+<h3 id="MessageBox函数的第二个参数："><a href="#MessageBox函数的第二个参数：" class="headerlink" title="MessageBox函数的第二个参数："></a>MessageBox函数的第二个参数：</h3><p>LPCTSTR类型的lpText，它是一个以NULL结尾的字符串，表示所要显示的消息的内容。</p>
+<h3 id="MessageBox函数的第三个参数："><a href="#MessageBox函数的第三个参数：" class="headerlink" title="MessageBox函数的第三个参数："></a>MessageBox函数的第三个参数：</h3><p>LPCTSTR类型的lpCaption，它也是一个以NULL结尾的字符串，在其中填我们要显示的消息框的标题的内容。</p>
+<h3 id="MessageBox函数的第四个参数："><a href="#MessageBox函数的第四个参数：" class="headerlink" title="MessageBox函数的第四个参数："></a>MessageBox函数的第四个参数：</h3><p>UINT类型的uType，表示我们消息窗口需要什么样的样式。微软已经为我们定义好了很多可供选择的样式和消息对应的图标，一些常用的样式列表如下：</p>
+<table>
+<thead>
+<tr>
+<th>标识名（Flags）</th>
+<th>含有精析</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MB_ABORTRETRYIGNORE</td>
+<td>消息框带有三个按钮：Abort、Retry和Ignore</td>
+</tr>
+<tr>
+<td>MB_OK</td>
+<td>消息框带有唯一一个按钮：OK。需要注意的是，MB_OK 是系统默认的MessageBox函数样式</td>
+</tr>
+<tr>
+<td>MB_OKCANCEL</td>
+<td>消息框带有两个按钮：OK和Cancel</td>
+</tr>
+<tr>
+<td>MB_RETRYCANCEL</td>
+<td>消息框带有两个按钮：Retry和Cancel</td>
+</tr>
+<tr>
+<td>MB_YESNO</td>
+<td>消息框带有两个按钮：YES和NO</td>
+</tr>
+<tr>
+<td>MB_YESNOCANCEL</td>
+<td>消息框带有三个按钮：YES、NO和Cancel</td>
+</tr>
+</tbody></table>
+<p>常见的图标我们也是通过一些标识名来指定，如以下几种：</p>
+<table>
+<thead>
+<tr>
+<th>标识名（Flags）</th>
+<th>含义精析</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MB_ICONWARNING</td>
+<td>“警告”图标</td>
+</tr>
+<tr>
+<td>MB_ICONASTERISK</td>
+<td>“风险”图标</td>
+</tr>
+<tr>
+<td>MB_ICONSTOP</td>
+<td>“停止”图标</td>
+</tr>
+</tbody></table>
+<p>这里只列出了一些常用的标识，完整版可以自行查阅MSDN。<br>想要多个标识一起使用的话，我们可以采用逻辑或（Logical OR）把不同的标识连接起来，具体的符号是键盘上Enter键上方的那条竖杠”|”。比如要创建一个具有YES和NO的按钮并带有”问号”图标的消息框，我们就把uType填成这样：MB_YESNO|MB_ICONQUESTION,非常直观。后面我们也会经常碰到类似的、需要多个标识符同时使用的场合，用一下这条竖杠”|”连接一下就好了。<br>和大多数Win32函数一样，MessageBox函数也有返回值。在Visual Studio示例程序中，这个返回值可以忽略。而如果我们创建了具有对应按钮的消息框，就涉及到按下具体的按键，就需要给出按键的返回值，这样我们就需要判断哪个键被按下了，再对应作出相应的响应。返回值的列表如下：</p>
+<table>
+<thead>
+<tr>
+<th>返回值类型</th>
+<th>精析</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IDABORT</td>
+<td>按下Abort后的返回值</td>
+</tr>
+<tr>
+<td>IDCANCEL</td>
+<td>按下Cancel后的返回值</td>
+</tr>
+<tr>
+<td>IDIGNORE</td>
+<td>按下Ignore后的返回值</td>
+</tr>
+<tr>
+<td>IDNO</td>
+<td>按下NO之后的返回值</td>
+</tr>
+<tr>
+<td>IDOK</td>
+<td>按下OK之后的返回值</td>
+</tr>
+<tr>
+<td>IDRETRY</td>
+<td>按下Retry之后的返回值</td>
+</tr>
+<tr>
+<td>IDYES</td>
+<td>按下Yes之后的返回值</td>
+</tr>
+</tbody></table>
+<p>这个短小的函数MessageBox我们算是讲完了。它虽然很简单，但是非常好用，可谓麻雀虽小五脏俱全，特别是在需要向玩家显示出错误消息的时候，比如我们写了一个函数，在程序执行出错的时候我们要知道出错的地方，就可以这样来写：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>（error）&#123;</span><br><span class="line">MessageBox（<span class="literal">NULL</span>,<span class="string">L&quot;在这里填写出错的信息&quot;</span>,<span class="string">L&quot;在这里填报错信息标题&quot;</span>,<span class="number">0</span>）；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>用MessageBox来显示错误消息的这个方法会贯穿我们游戏编程的始终，如果想让我们的游戏程序遇到问题可以更加智能，就要在我们的游戏程序源代码中多加一些这样的”错误处理”代码。值得一提的是，在运行游戏程序时经常会弹出一个提示框，提示缺失某某D3D的DLL或者MSVR的DLL，程序想要重新安装云云，就是这个MessageBox函数的杰作。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/ArvinRoad">Arvin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章連結: </span><span class="post-copyright-info"><a href="https://arvinroad.github.io/2022/02/22/GameCode_WinMain_2022.2.22.01/">https://arvinroad.github.io/2022/02/22/GameCode_WinMain_2022.2.22.01/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版權聲明: </span><span class="post-copyright-info">此文章版權歸Arvin所有，如有轉載，請註明來自原作者</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%99%E5%AD%A6%E6%96%87%E6%A1%A3/">教学文档</a><a class="post-meta__tags" href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></div><div class="post_share"><div class="social-share" data-image="https://p1.ssl.qhimg.com/t01f1364aab8bc27b46.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/12/06/TypeScript_JS_Learning_2021_12_6_01/"><img class="next-cover" src="https://th.bing.com/th/id/R.dc288c8099126dcd9dac931dba803328?rik=UT7Q8NHUjM78nw&amp;riu=http%3a%2f%2fbloghoctap.com%2fwp-content%2fuploads%2f2017%2f01%2ftypescript.jpg&amp;ehk=sAVZdoJHlKzU%2b7PmPVy5RFSx74EWpBmneW7oTdKbFvM%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" onerror="onerror=null;src='/./img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">TypeScript 程序流程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相關推薦</span></div><div class="relatedPosts-list"><div><a href="/2021/09/11/Cent OS 8.0 _ Deployment server/" title="Cent OS 8.0服务器部署Spring Boot"><img class="cover" src="https://tse1-mm.cn.bing.net/th/id/R-C.31870bb6dedfd32cc160e015fd68fade?rik=iCzrIYHAo6bQOQ&riu=http%3a%2f%2fwww.dzbioinformatics.com%2fwp-content%2fuploads%2f2018%2f06%2finstall-centos-7-logo.png&ehk=JLOCclFMnbrYH3Z%2b4FEDHEPEFEDn6Gfcwtv%2fPcvMW8Q%3d&risl=&pid=ImgRaw&r=0" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-11</div><div class="title">Cent OS 8.0服务器部署Spring Boot</div></div></a></div><div><a href="/2021/08/29/Git/" title="Git指令讲解"><img class="cover" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.yB2JuF2uOWan-VGTHCE0yQHaEK?w=277&h=180&c=7&r=0&o=5&pid=1.7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-29</div><div class="title">Git指令讲解</div></div></a></div><div><a href="/2021/09/16/Kali-LinuxPTPAIillustrate/" title="Kali-Linux 渗透测试流程以及信息收集"><img class="cover" src="https://tse3-mm.cn.bing.net/th/id/OIP-C.RI-jGvsfW8kRiYJdf5eqlwHaD4?pid=ImgDet&rs=1" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-16</div><div class="title">Kali-Linux 渗透测试流程以及信息收集</div></div></a></div><div><a href="/2021/08/29/San_Passage/" title="散章（UE4）"><img class="cover" src="https://pic2.zhimg.com/v2-958e86ca0ed97045323e6208e8f842fd_180x120.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-29</div><div class="title">散章（UE4）</div></div></a></div><div><a href="/2021/08/29/UnLua_Programming_Guide_CN/" title="Lua讲解"><img class="cover" src="https://pic4.zhimg.com/v2-149560fe9bf1888aad0035c490f6a59c_1440w.jpg?source=172ae18b" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-29</div><div class="title">Lua讲解</div></div></a></div><div><a href="/2021/09/06/WEB_Css_readme/" title="Css初始化Readme文件"><img class="cover" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.nC6N5IAsNU9fhLfE3i_oowHaC7?pid=ImgDet&rs=1" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-06</div><div class="title">Css初始化Readme文件</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 評論</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/./img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Arvin</div><div class="author-info__description">创造幻想中的故事世界！</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">標籤</div><div class="length-num">19</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分類</div><div class="length-num">7</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Think-Create-Technology-Studio"><i class="fab fa-github"></i><span>关注我们</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ArvinRoad" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2644266656syx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">创想科技，创造好的游戏（建议采用夜间模式）</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#WinMain%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">WinMain的第一个参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WinMain%E7%9A%84%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">WinMain的第二个参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WinMain%E7%9A%84%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">WinMain的第三个参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WinMain%E7%9A%84%E7%AC%AC%E5%9B%9B%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">WinMain的第四个参数：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MessageBox%E5%87%BD%E6%95%B0"><span class="toc-number"></span> <span class="toc-text">MessageBox函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MessageBox%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">MessageBox函数第一个参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MessageBox%E5%87%BD%E6%95%B0%E7%9A%84%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">MessageBox函数的第二个参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MessageBox%E5%87%BD%E6%95%B0%E7%9A%84%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">MessageBox函数的第三个参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MessageBox%E5%87%BD%E6%95%B0%E7%9A%84%E7%AC%AC%E5%9B%9B%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">MessageBox函数的第四个参数：</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/02/22/GameCode_WinMain_2022.2.22.01/" title="Cent OS 8.0服务器部署Spring Boot"><img src="https://p1.ssl.qhimg.com/t01f1364aab8bc27b46.jpg" onerror="this.onerror=null;this.src='/./img/404.jpg'" alt="Cent OS 8.0服务器部署Spring Boot"/></a><div class="content"><a class="title" href="/2022/02/22/GameCode_WinMain_2022.2.22.01/" title="Cent OS 8.0服务器部署Spring Boot">Cent OS 8.0服务器部署Spring Boot</a><time datetime="2022-02-22T12:44:00.000Z" title="發表於 2022-02-22 20:44:00">2022-02-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/TypeScript_JS_Learning_2021_12_6_01/" title="TypeScript 程序流程"><img src="https://th.bing.com/th/id/R.dc288c8099126dcd9dac931dba803328?rik=UT7Q8NHUjM78nw&amp;riu=http%3a%2f%2fbloghoctap.com%2fwp-content%2fuploads%2f2017%2f01%2ftypescript.jpg&amp;ehk=sAVZdoJHlKzU%2b7PmPVy5RFSx74EWpBmneW7oTdKbFvM%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" onerror="this.onerror=null;this.src='/./img/404.jpg'" alt="TypeScript 程序流程"/></a><div class="content"><a class="title" href="/2021/12/06/TypeScript_JS_Learning_2021_12_6_01/" title="TypeScript 程序流程">TypeScript 程序流程</a><time datetime="2021-12-06T07:22:52.000Z" title="發表於 2021-12-06 15:22:52">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/05/TypeScript_JS_Learning_2021_12_5_01/" title="TypeScript | JavaScript 变量与常量"><img src="https://th.bing.com/th/id/R.dc288c8099126dcd9dac931dba803328?rik=UT7Q8NHUjM78nw&amp;riu=http%3a%2f%2fbloghoctap.com%2fwp-content%2fuploads%2f2017%2f01%2ftypescript.jpg&amp;ehk=sAVZdoJHlKzU%2b7PmPVy5RFSx74EWpBmneW7oTdKbFvM%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" onerror="this.onerror=null;this.src='/./img/404.jpg'" alt="TypeScript | JavaScript 变量与常量"/></a><div class="content"><a class="title" href="/2021/12/05/TypeScript_JS_Learning_2021_12_5_01/" title="TypeScript | JavaScript 变量与常量">TypeScript | JavaScript 变量与常量</a><time datetime="2021-12-05T12:47:52.000Z" title="發表於 2021-12-05 20:47:52">2021-12-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/15/CodeGame_Java_SuperMary_Test08/" title="Java 音乐类（完结）"><img src="https://www.ign.com.cn/sm/ign_cn/screenshot/default/5_qw6f.jpg" onerror="this.onerror=null;this.src='/./img/404.jpg'" alt="Java 音乐类（完结）"/></a><div class="content"><a class="title" href="/2021/11/15/CodeGame_Java_SuperMary_Test08/" title="Java 音乐类（完结）">Java 音乐类（完结）</a><time datetime="2021-11-15T08:27:52.000Z" title="發表於 2021-11-15 16:27:52">2021-11-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/14/CodeGame_Java_SuperMary_Test07/" title="Java 敌人类"><img src="https://pic2.zhimg.com/v2-957d2a1fac8856452f3ce0aac00427d9_b.jpg" onerror="this.onerror=null;this.src='/./img/404.jpg'" alt="Java 敌人类"/></a><div class="content"><a class="title" href="/2021/11/14/CodeGame_Java_SuperMary_Test07/" title="Java 敌人类">Java 敌人类</a><time datetime="2021-11-14T10:48:52.000Z" title="發表於 2021-11-14 18:48:52">2021-11-14</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://p1.ssl.qhimg.com/t01f1364aab8bc27b46.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Arvin</div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61011602000392"> <img class="icp-icon" src="/img/icp.png"> <span>備案號：陕公网安备 61011602000392号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="簡繁轉換">繁</button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直達評論"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到頂部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜尋</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜尋文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'twikoo-2gpelq3q7fc2f05c',
+      region: ''
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'twikoo-2gpelq3q7fc2f05c',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script><script src="https://myhkw.cn/api/player/1631371731108" id="myhk" key="1631371731108" m="1"></script><script src="/js/mourning.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script src="//code.tidio.co/7w9ege46jxui0verthfqsrenlqozsnv4.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
