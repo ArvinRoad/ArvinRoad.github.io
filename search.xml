@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>C语言概述</title>
+      <link href="/2022/02/22/C_2022.2.22.02/"/>
+      <url>/2022/02/22/C_2022.2.22.02/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-1-1-什么是C语言"><a href="#1-1-1-什么是C语言" class="headerlink" title="1.1.1 什么是C语言"></a>1.1.1 什么是C语言</h2><p>C语言就是和电脑进行交流的语言。学习C语言是为了进阶C++。</p><h2 id="1-1-2-什么是软件"><a href="#1-1-2-什么是软件" class="headerlink" title="1.1.2 什么是软件"></a>1.1.2 什么是软件</h2><p>软件：一系列按照特定顺序组织的计算机数据和指令集合。<br>常见的软件：<br>系统软件：如：DOS、Windows、Linux、IOS、Android等。<br>应用软件：如：微信、扫雷、迅雷、QQ等。<br>软件的出现实现了人与计算机之间的更好的交互。<br>交互方式：<br>自然交互界面：声音控制、触摸屏手势识别。<br>图形化界面：这种方式简单直观，使用者易于接受，容易上手操作。<br>命令行方式：需要一个控制台，输入特定的指令，让计算机完成一系列操作。较为麻烦，需要记录住一些命令。</p><h2 id="1-1-3-计算机信息存储"><a href="#1-1-3-计算机信息存储" class="headerlink" title="1.1.3 计算机信息存储"></a>1.1.3 计算机信息存储</h2><p>位（Bit）：度量数据的最小单位<br>字节（Byte）：最常用的基本单位，一个字节有8Bit<br>K ：1K = 1024 byte<br>M（兆）：1M = 1024 K<br>G（吉）：1G = 1024 M<br>T （太）：1T = 1024 G</p><h2 id="1-1-4-进制的概念"><a href="#1-1-4-进制的概念" class="headerlink" title="1.1.4 进制的概念"></a>1.1.4 进制的概念</h2><p>注意：计算机是用二进制存储数据的。<br>十进制： R=10 数字集 0123456789<br>二进制： R=2   数字集 01<br>八进制： R=8   数字集 01234567<br>十六进制：R=16 数字集 0~9ABCDEF</p><h2 id="1-1-5-程序与指令"><a href="#1-1-5-程序与指令" class="headerlink" title="1.1.5 程序与指令"></a>1.1.5 程序与指令</h2><p>指令是对计算机进行程序控制的最小单位。<br>所有的指令的集合称为计算机的指令系统。电脑是X86，手机是 ARM。<br>程序是为了完成一项特定任务而用某种语言来编写的一组指令序列。<br>计算机的大脑或者是心脏就是CPU，它控制着整个计算机运作，每种CPU，都有自己的指令系统，这个指令系统，就是该CPU的机器语言。机器语言是一组由0和1系列组成的指令码，这些指令码，是CPU制作厂商规定出来的，然后发布出来，请程序员遵守。比如下面某CPU指令系统中的两条指令：<br>10000000 加 | 10010000 减<br>要让计算机工作，就得用这样的语言去命令它。这样的命令，不是一条两条，而是上百条。而且不同型号的计算机其计算机语言是不相通的，按着一种计算机的机器指令编制的程序，不能在另一种计算机上执行。<br>终于出现了汇编语言，就是一些标识符取代0与1，一门人类可以比较轻松认识的编程语言。只是这门语言计算机并不认识，所以人类还不能用这个语言命令计算机做事情。<br>所以，有一类专门的程序，既认识机器语言，又认识汇编语言，也就是编译器，将标识符转化为0与1，知道怎么把汇编语言翻译成机器语言。于是人类和机器间的交流，终于又畅通了，而且人类可以比较轻松的编写程序了，也就是编译器，将标识符转化为0与1。<br>汇编语言和机器语言都是面向机器的，机器不同，语言也不同。既然有办法让编译器翻译成机器语言，难道就不能把其他更人性化的语言翻译成机器语言？1954年，Fortran 语言出现了，其后相继出现了类似的语言。这批语言，使程序员摆脱了计算机硬件的限制，把主要精力放在了程序设计上，不在关注底层的计算机硬件。这类语言称为高级语言。同样的，高级语言要被计算机执行，也需要一个翻译程序将其翻译成机器语言，这就是编译程序，简称编译器。<br>这类高级语言解决问题的方法是分析出解决问题所需要的步骤，把程序看作是数据加工的过程。基于这类方法的程序设计语言成为面向过程的语言。C语言就是这种面向过程的程序设计语言。</p><h3 id="1-1-5-1"><a href="#1-1-5-1" class="headerlink" title="1.1.5.1"></a>1.1.5.1</h3><p>例子：使用指令关机<br>Shutdown -s -t 600 // 关机<br>shutdown -a          // 取消关机<br>Shutdown -r -t      // 重启<br><a name="ugKxB"></a></p><h2 id="1-1-6-主流语言进化史"><a href="#1-1-6-主流语言进化史" class="headerlink" title="1.1.6 主流语言进化史"></a>1.1.6 主流语言进化史</h2><p>艾伦·麦席森·图灵（Alan Mathison Turing，1912年6月23日 - 1954年6月7日），英国数学家、逻辑学家，被称为计算机之父，人工智能之父。<br><a name="EK0p2"></a></p><h3 id="1-1-6-1-PHP是最好的语言出处"><a href="#1-1-6-1-PHP是最好的语言出处" class="headerlink" title="1.1.6.1 PHP是最好的语言出处"></a>1.1.6.1 PHP是最好的语言出处</h3><p>PHP是最好的语言这个梗不是出自别处，而就是出自PHP的官方文档！<br>PHP is the best language for web programming，but what about other languages?<br>​</p><p>Because PHP is the best language ever, ever It`s fast ,very powerful, and free.<br><a name="Ynp00"></a></p><h3 id="1-1-6-2"><a href="#1-1-6-2" class="headerlink" title="1.1.6.2"></a>1.1.6.2</h3><p>第一代：机器语言<br>第二代：汇编语言<br>第三代：C语言<br>第四代：C/C++、ObjectiveC语言<br>第五代：Java、C#、PHP、Lua、Pyhon、VB<br><a name="GLfmh"></a></p><h2 id="1-1-7-C语言特点"><a href="#1-1-7-C语言特点" class="headerlink" title="1.1.7 C语言特点"></a>1.1.7 C语言特点</h2><p>代码量小（相对汇编）执行速度快可移植性较差<br>功能强大（上帝之手）过于自由，经验不足易出错<br>编程自由（基本后面的语言都它写的）对平台库依赖较多<br>编写代码实现周期长  可移植性较差<br><a name="R8Xv4"></a></p><h2 id="1-1-8-为什么要学C语言"><a href="#1-1-8-为什么要学C语言" class="headerlink" title="1.1.8 为什么要学C语言"></a>1.1.8 为什么要学C语言</h2><p>因为强，黑客必备。<br>名企、外企、高新程序员面试必考<br>未来的精英语言<br><a name="qbXzM"></a></p><h2 id="1-1-9-C语言适用领域"><a href="#1-1-9-C语言适用领域" class="headerlink" title="1.1.9 C语言适用领域"></a>1.1.9 C语言适用领域</h2><p>计算机领域，C/C++大小通吃<br>C语言的应用极为广泛，从网站后台，到底层操作系统，从多媒体应用到大型网络游戏，从主板开发到人工智能均可使用C语言来开发。大公司职位，高薪职位都要求C语言基础好。</p><ol><li>可以写网站后台程序</li><li>可以写GUI界面（Windows等可视化操作界面）</li><li>可以针对某个主题写出功能强大的程序库，然后供其他程序方便使用，从而让其他程序节省开发时间。</li><li>可以写出大型游戏的引擎</li><li>可以写出另一个语言</li><li>可以写操作系统和驱动程序，并且只能用C语言编写，Linux操作系统的全部源代码都可以在网上得到，要深入了解操作系统的运行秘密，懂C语言就可以看懂。</li><li>任何设备只要配置了微处理器，就都支持C语言。从微波炉到手机，都是由C语言技术来推动的。嵌入式开发<br><a name="VICFI"></a><h2 id="1-2-0-C语言关键字"><a href="#1-2-0-C语言关键字" class="headerlink" title="1.2.0 C语言关键字"></a>1.2.0 C语言关键字</h2>C语言仅有32个关键字，9种控制语句，却能完成无数的功能。<br>32个关键字：（由系统定义，不能重做其他定义）</li></ol><table><thead><tr><th>auto</th><th>break</th><th>case</th><th>char</th><th>const</th></tr></thead><tbody><tr><td>continue</td><td>default</td><td>do</td><td>double</td><td>else</td></tr><tr><td>Enum</td><td>extern</td><td>float</td><td>for</td><td>go to</td></tr><tr><td>if</td><td>int</td><td>long</td><td>register</td><td>return</td></tr><tr><td>short</td><td>signed</td><td>size of</td><td>static</td><td>struct</td></tr><tr><td>switch</td><td>typedef</td><td>unsigned</td><td>union</td><td>void</td></tr><tr><td>volatile</td><td>while</td><td>​</td><td></td><td></td></tr><tr><td>​</td><td></td><td></td><td></td><td></td></tr><tr><td>​</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><p><a name="s5w08"></a></p><h2 id="1-2-1-9种控制语句"><a href="#1-2-1-9种控制语句" class="headerlink" title="1.2.1 9种控制语句"></a>1.2.1 9种控制语句</h2><p>If () ~ else ~<br>For () ~<br>while ()~<br>do ~ while ()<br>Continue<br>Break<br>Switch<br>Go to<br>Return<br><a name="QA3me"></a></p><h2 id="1-2-2-C语言的34种运算符"><a href="#1-2-2-C语言的34种运算符" class="headerlink" title="1.2.2 C语言的34种运算符"></a>1.2.2 C语言的34种运算符</h2><p>34种运算符：<br>算术运算符：+ - * / % ++ –<br>关系运算符：&lt; &lt;= == &gt; &gt;= !=<br>逻辑运算符：！ &amp;&amp; ||<br>位运算符：&lt;&lt; &gt;&gt; ~ | ^ &amp;<br>赋值运算符： = 及其扩展<br>条件运算符：？：<br>逗号运算符：，<br>指针运算符：* &amp;<br>求字节数：sieze of<br>强制类型转化：（类型）<br>分量运算符：. -&gt;<br>下标运算符：[]<br>其他：：（） -<br><a name="vJTDX"></a></p><h2 id="2-0-C语言开发环境搭建"><a href="#2-0-C语言开发环境搭建" class="headerlink" title="2.0 C语言开发环境搭建"></a>2.0 C语言开发环境搭建</h2><ol><li>Visual studio（全宇宙最强编译器）</li></ol><p>记得勾选C++开发</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 程序 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C语言 </tag>
+            
+            <tag> 教学文档 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows 游戏编程 — WinMain</title>
       <link href="/2022/02/22/GameCode_WinMain_2022.2.22.01/"/>
       <url>/2022/02/22/GameCode_WinMain_2022.2.22.01/</url>
@@ -850,9 +877,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1004,9 +1031,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 教学文档 </tag>
+            
+            <tag> Java </tag>
             
             <tag> 程序开发 </tag>
             
